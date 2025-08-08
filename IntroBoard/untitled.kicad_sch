@@ -4200,10 +4200,6 @@
 		(uuid "6bfbe60a-8ca9-4beb-a5b9-55d43ddfe4b0")
 	)
 	(no_connect
-		(at 101.6 67.31)
-		(uuid "6d2657c6-2105-49aa-ba0a-5c9bda51aaea")
-	)
-	(no_connect
 		(at 123.19 45.72)
 		(uuid "6ef769fb-906a-47b7-a39a-bcf331f29524")
 	)
@@ -4268,6 +4264,16 @@
 			(type default)
 		)
 		(uuid "01e7f84f-8da7-4f6a-be31-c0737e9d8c1f")
+	)
+	(wire
+		(pts
+			(xy 96.52 67.31) (xy 96.52 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05189b12-adab-4835-beff-dd471a3c8f85")
 	)
 	(wire
 		(pts
@@ -4808,6 +4814,16 @@
 			(type default)
 		)
 		(uuid "6ad8ae7c-eb6b-499a-a1b5-df0a05e3acd0")
+	)
+	(wire
+		(pts
+			(xy 101.6 67.31) (xy 96.52 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bad6117-d8d1-4c3a-bdf5-931ede3c2b69")
 	)
 	(wire
 		(pts
@@ -6196,6 +6212,71 @@
 			(project "IntroBoard"
 				(path "/8b361d18-084e-4f41-9927-72e4c0f07c3e/3ec74b54-7181-4525-b4fc-3d9e1217fe1f"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 96.52 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "098542c6-1c39-4fb7-81e0-a9dad48855c2")
+		(property "Reference" "#PWR023"
+			(at 96.52 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 92.71 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 96.52 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16ef7137-cfd9-43a8-9a5b-b94cc9b2c788")
+		)
+		(instances
+			(project ""
+				(path "/8b361d18-084e-4f41-9927-72e4c0f07c3e/3ec74b54-7181-4525-b4fc-3d9e1217fe1f"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -8700,7 +8781,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 143.51 74.93 0)
 			(effects
 				(font
